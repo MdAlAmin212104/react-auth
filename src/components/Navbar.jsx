@@ -20,6 +20,11 @@ const Navbar = () => {
             <li><Link to='/login'>Login</Link></li>
             <li><Link to='/register'>Register</Link></li>
             <li><Link to='/orders'>Orders</Link></li>
+            { user && <>
+                  <li><Link to='/profile'>Profile</Link></li>
+                  <li><Link to='/information'>Info</Link></li>
+            
+            </>}
       </>
       return (
             <div className="navbar bg-base-100">
